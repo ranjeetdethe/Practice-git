@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox Demo</title>
+<style>
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid black;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.item{
+  background: lightblue;
+  border : 2px solid blue;
+  padding: 1rem;
+  margin : 0.5rem;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+/* Container 1 */
+.container1{
+  display: flex;
+}
+
+.item1{
+  position: relative;
+  background: #edd7d7;
+  padding:1rem;
+  margin :0.5rem;
+  border: 2px solid red;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Flex Container (Auto Wrap Layout)</h2>
+
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+  <div class="item">Item 4</div>
+  <div class="item">Item 5</div>
+  <div class="item">Item 6</div>
+</div>
+
+<h2>Simple Flex Container</h2>
+
+<div class="container1">
+  <div class="item1">Box A</div>
+  <div class="item1">Box B</div>
+  <div class="item1">Box C</div>
+</div>
+
+</body>
+</html>

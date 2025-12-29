@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smiley Canvas</title>
+</head>
+<body>
+
+<canvas id="myCanvas" width="300" height="300" style="border:1px solid black;"></canvas>
+
+<script>
+    var c = document.getElementById("myCanvas");
+
+    var ctx = c.getContext("2d");
+
+    // Face
+    ctx.beginPath();
+    ctx.arc(150,150,100,0,Math.PI*2);
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.stroke();
+
+    // Left Eye
+    ctx.beginPath();
+    ctx.arc(110,120,10,0,Math.PI*2);
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    // Right Eye
+    ctx.beginPath();
+    ctx.arc(190,120,10,0,Math.PI*2);
+    ctx.fill();
+
+    // Smile
+    ctx.beginPath();
+    ctx.arc(150,150,60,0,Math.PI);
+    ctx.stroke();
+</script>
+<script>
+    // Adding a hat
+    ctx.beginPath();
+    ctx.moveTo(70,80);
+    ctx.lineTo(230,80);
+    ctx.lineTo(200,40);
+    ctx.lineTo(100,40);
+    ctx.closePath();
+    ctx.fillStyle = "black";
+    ctx.fill();
+    ctx.stroke();
+</script>
+</body>
+</html>
